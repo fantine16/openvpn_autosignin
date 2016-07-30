@@ -6,6 +6,7 @@ then
 else
 	connected=0
 fi
+echo $connected
 
 while [ $connected -eq 0 ] && [ `ifconfig|grep tun | wc -l` -gt 1 ]
 do 
